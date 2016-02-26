@@ -1,0 +1,41 @@
+# two people
+<http://demo/zoia> <http://test/predicates/name> "Zoia Horn" .
+<http://demo/zoia> <http://test/predicates/bornIn> "Odessa, Ukraine" .
+
+<http://demo/turing> <http://test/predicates/name> "Alan Mathison Turing" .
+<http://demo/turing> <http://test/predicates/bornIn> "Maida Vale, London, England" .
+
+
+# movies from SemWeb for working ontologist
+<http://demo/jamesDean> <http://test/predicates/playedIn> <http://demo/eastOfEden> .
+<http://demo/jamesDean> <http://test/predicates/playedIn> <http://demo/giant> .
+<http://demo/jamesDean> <http://test/predicates/playedIn> <http://demo/rebelWithoutACause> .
+
+<http://demo/rebelWithoutACause> <http://test/predicates/directedBy> <http://demo/nicholasRay> .
+<http://demo/giant> <http://test/predicates/directedBy> <http://demo/georgeStevens> .
+<http://demo/giant> <http://test/predicates/directedBy> <http://demo/fredGuiol> .
+<http://demo/eastOfEden> <http://test/predicates/directedBy> <http://demo/eliaKazan> .
+
+<http://demo/annDoran> <http://test/predicates/playedIn> <http://demo/rebelWithoutACause> .
+<http://demo/annDoran> <http://test/predicates/type> <http://demo/woman> .
+
+<http://demo/natalieWood> <http://test/predicates/playedIn> <http://demo/rebelWithoutACause> .
+<http://demo/natalieWood> <http://test/predicates/type> <http://demo/woman> .
+
+<http://demo/julieHarris> <http://test/predicates/playedIn> <http://demo/eastOfEden> .
+<http://demo/julieHarris> <http://test/predicates/type> <http://demo/woman> .
+
+<http://demo/carrollBaker> <http://test/predicates/playedIn> <http://demo/giant> .
+<http://demo/carrollBaker> <http://test/predicates/type> <http://demo/woman> .
+
+<http://demo/rockHudson> <http://test/predicates/playedIn> <http://demo/giant> .
+<http://demo/rockHudson> <http://test/predicates/type> <http://demo/man> .
+
+
+# inferencing (mammals are subclasses of animals, dogs and cats are mammals, therefore dogs and cats are animals)
+<http://demo/mammal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://demo/animal> .
+
+<http://demo/dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://demo/mammal> .
+<http://demo/cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://demo/mammal> .
+
+
